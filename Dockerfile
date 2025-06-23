@@ -29,7 +29,7 @@ RUN apk --update add tar
 COPY ./backend ./backend
 RUN cd backend && npm run build
 
-EXPOSE 3000
+EXPOSE 80
 
 #CMD ["sleep", "1d"]
 CMD /bin/sh -c "cd frontend && npm run copy:backend && cd ../backend && npm run serve"
