@@ -12,4 +12,4 @@ services:
       - ./backend/storage:/app/backend/storage
       - ./backend/public:/app/backend/public
     ports:
-      - "3000:3000"
+      - "80:80"
