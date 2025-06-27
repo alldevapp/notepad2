@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  backend:
+    build:
+      context: https://github.com/alldevapp/notepad2.git
+    container_name: backend
+    environment:
+      NODE_ENV: production
+    restart: always
+    volumes:
+      - ./backend/storage:/app/backend/storage
+      - ./backend/public:/app/backend/public
+    ports:
+      - "80:3000"
