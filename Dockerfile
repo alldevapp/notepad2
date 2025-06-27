@@ -3,7 +3,6 @@ WORKDIR /app
 
 COPY backend/package.json ./backend/
 COPY frontend/package.json ./frontend/
-COPY vite.config.js ./frontend/vite.config.js   # <-- copy vite config into frontend folder
 
 # Install dependencies for both frontend and backend
 RUN npm install --prefix ./backend/
